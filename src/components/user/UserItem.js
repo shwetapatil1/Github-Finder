@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 
 class UserItem extends Component {
-    constructor() {
-        super();
-        this.state = {
-            id:'id',
-            login:'pjhyett',
-            avatar_url:'https://avatars0.githubusercontent.com/u/3?v=4',
-            html_url:'https://github.com/pjhyett'
-        }
+    state = {
+        id:'id',
+        login:'pjhyett',
+        avatar_url:'https://avatars0.githubusercontent.com/u/3?v=4',
+        html_url:'https://github.com/pjhyett'
     }
     render() {
         return (
