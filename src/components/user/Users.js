@@ -12,7 +12,7 @@ class Users extends Component {
             "gravatar_id": "",
             "url": "https://api.github.com/users/mojombo",
             "html_url": "https://github.com/mojombo",
-            "followers_url": "https://api.github.com/users/mojombo/followers",
+            "followers_url": "https://ap.com/users/mojombo/followers",
             "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
             "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
             "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
@@ -91,7 +91,7 @@ class Users extends Component {
         return (
             <div>
                 {this.state.users.map(user => (
-                    <div>
+                    <div key={user.id}>
                         {user.login}
                     </div>
                 ))}  
